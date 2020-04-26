@@ -27,7 +27,9 @@
   "scripts": {
     "test": "bron test/*.spec.js",
     "lint": "eslint lib/**/*.js",
-    "format": "prettier --write lib/**/*.js bin/*.js test/*.js *.md"
+    "format": "prettier --write lib/**/*.js bin/*.js test/*.js *.md",
+    "dev": "bin/reveal-md.js dummy.md",
+    "dev:watch": "bin/reveal-md.js dummy.md -- -w"
   },
   "dependencies": {
     "debug": "4.1.1",
